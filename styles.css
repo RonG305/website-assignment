@@ -30,6 +30,10 @@ ul {
    margin: 0 auto;
 }
 
+span {
+   color: var(--bg-info);
+}
+
 nav .navbar {
    background-color: var(--bg-primary);
    height: 80px;
