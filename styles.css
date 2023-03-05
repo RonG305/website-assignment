@@ -1,0 +1,337 @@
+:root {
+   --bg-primary: rgb(37, 105, 37);
+   --bg-secondary: rgb(36, 46, 54);
+   --bg-info:rgb(26, 140, 234);
+   --bg-button: rgb(225, 150, 11);
+   
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+}
+
+a {
+   text-decoration: none;
+   
+}
+
+ul {
+   list-style: none;
+
+}
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+}
+
+nav .navbar {
+   background-color: var(--bg-primary);
+   height: 80px;
+   position: fixed;
+   width: 100%;
+}
+
+nav .navbar img {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+nav .navbar .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 100%;
+}
+
+nav .navbar .nav-links ul {
+   display: flex;
+   
+}
+
+
+nav .navbar .nav-links ul li {
+   margin-left: 20px;
+}
+
+nav .navbar .nav-links ul li a {
+   color: #fff;
+}
+
+nav .navbar .nav-links ul li a:hover {
+   color: var(--bg-button);
+   transition: 0.3s ease-out;
+} 
+
+.authentication ul {
+   display: flex;
+}
+
+.authentication ul li {
+   background-color: var(--bg-button);
+   margin-left: 20px;
+   border-radius: 7px;
+   width: 120px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.authentication ul #login {
+   background-color: var(--bg-info);
+}
+
+.authentication ul li a {
+   color: #fff;
+}
+
+
+/* HERO SECTION */
+.hero {
+   background-color: var(--bg-primary);
+   height: 100vh;
+}
+
+.hero .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+}
+
+.hero .container .hero-content {
+   width: 60%;
+}
+
+
+.hero .container h2 {
+   color: var(--bg-button);
+   margin-bottom: 1.5rem;
+}
+
+.hero .container .hero-content .left .get-started {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+   margin-top: 1.4rem;
+}
+
+.hero .container .hero-content .left .get-started i {
+   font-size: 30px;
+   margin-right: 7px;
+}
+
+
+.hero .container .hero-content .left .button {
+   background-color: var(--bg-button);
+   margin-left: 20px;
+   border-radius: 7px;
+   width: 120px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.hero .container .hero-content .left .button:hover {
+   background-color: rgb(255, 196, 0);
+}
+
+.hero .container .hero-content .left  a {
+   color: #fff;
+}
+
+/* School Info */
+
+.school-info {
+   height: auto;
+
+}
+
+.school-info .cards {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 3rem;
+}
+
+.school-info .cards .card {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   width: 300px;
+   height: auto;
+   padding: 20px;
+   
+   border-radius: 8px;
+}
+
+.school-info .cards .card i {
+   font-size: 3rem;
+}
+.school-info .cards .card h5 {
+   color: var(--bg-button);
+   margin-top: 20px;
+}
+
+/* PROGRAMS */
+
+.programs {
+   margin-bottom: 2rem;
+}
+.programs .programs-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px 15px;
+}
+.programs a {
+   color: #fff;
+}
+
+.programs .programs-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.programs .program-content {
+   color: #fff;
+   background-color: rgb(79, 87, 79);
+   width: 350px;
+   height: auto;
+   border-radius: 10px;
+   padding: 10px 15px;
+   margin-bottom: 20px;
+}
+
+.programs .program-content img {
+   width: 100%;
+   height: 350px;
+   border-radius: 10px;
+}
+
+.programs-container h3 {
+   padding: 20px 0;
+   color: var(--bg-button);
+}
+
+.programs-container p {
+   line-height: 2rem;
+   padding: 15px 0;
+}
+
+.programs h5 {
+   padding: 15px 0;
+}
+
+.programs h5 >i {
+   font-size: 20px;
+   margin-right: 8px;
+}
+
+.programs span {
+   color: var(--bg-info);
+}
+
+
+/* COURSES */
+.courses {
+  height: 100vh;
+}
+
+.courses .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+
+
+.courses .course-header {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 2rem;
+}
+
+.courses .course-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 2rem;
+
+  
+}
+
+.courses .course-container .course-content {
+   width: 400px;
+   height: auto;
+}
+
+.courses .course-content img {
+   width: 100%;
+}
+
+.courses .course-content i {
+   color: rgb(232, 232, 37);
+}
+
+
+@media screen and (max-width: 500px) {
+
+   body {
+      font-size: 12px;
+   }
+   .hero .container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .container {
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   .hero {
+      height: auto;
+      padding-top: 7rem;
+   }
+
+   .school-info .cards {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+   }
+
+   .programs .programs-container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .school-info .cards .card {
+      padding: 10px 15px;
+   }
+
+   .courses .course-container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .courses .course-container .course-content {
+      padding: 10px 20px;
+   }
+
+   .courses {
+      height: auto;
+    }
+}
+
