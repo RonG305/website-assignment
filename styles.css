@@ -168,7 +168,7 @@ nav .navbar .nav-links ul li a:hover {
 
 .school-info .cards .card {
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   width: 300px;
+   width: 350px;
    height: auto;
    padding: 20px;
    
@@ -208,7 +208,7 @@ nav .navbar .nav-links ul li a:hover {
 .programs .program-content {
    color: #fff;
    background-color: rgb(79, 87, 79);
-   width: 350px;
+   width: 380px;
    height: auto;
    border-radius: 10px;
    padding: 10px 15px;
