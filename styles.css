@@ -13,6 +13,11 @@
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
    scroll-behavior: smooth;
+  
+}
+
+body {
+   overflow-x: hidden;
 }
 
 a {
@@ -32,6 +37,12 @@ ul {
 
 span {
    color: var(--bg-info);
+}
+
+nav {
+   position: relative;
+   overflow-x: hidden;
+   
 }
 
 nav .navbar {
@@ -54,9 +65,9 @@ nav .navbar .container {
    height: 100%;
 }
 
-nav .navbar .nav-links ul {
+.nav-links ul {
    display: flex;
-   
+   z-index: 99;
 }
 
 
@@ -73,11 +84,9 @@ nav .navbar .nav-links ul li a:hover {
    transition: 0.3s ease-out;
 } 
 
-.authentication ul {
-   display: flex;
-}
 
-.authentication ul li {
+
+#login, #signup {
    background-color: var(--bg-button);
    margin-left: 20px;
    border-radius: 7px;
@@ -87,12 +96,29 @@ nav .navbar .nav-links ul li a:hover {
    align-items: center;
    justify-content: center;
 }
+
 .authentication ul #login {
    background-color: var(--bg-info);
 }
 
 .authentication ul li a {
    color: #fff;
+}
+
+.mobile {
+   display: none;
+}
+
+.mobile ul {
+   list-style: none;
+   display: flex;
+}
+
+.mobile ul li {
+   margin-right: 25px;
+   font-size: 25px;
+   color: #fff;
+   
 }
 
 
@@ -168,7 +194,7 @@ nav .navbar .nav-links ul li a:hover {
 
 .school-info .cards .card {
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   width: 350px;
+   width: 300px;
    height: auto;
    padding: 20px;
    
@@ -207,9 +233,8 @@ nav .navbar .nav-links ul li a:hover {
 
 .programs .program-content {
    color: #fff;
-/*    background-color: rgb(79, 87, 79); */
    background-color: rgb(79, 136, 79);
-   width: 380px;
+   width: 350px;
    height: auto;
    border-radius: 10px;
    padding: 10px 15px;
@@ -296,6 +321,31 @@ nav .navbar .nav-links ul li a:hover {
    body {
       font-size: 12px;
    }
+
+   .nav-links ul {
+      
+      flex-direction: column;
+      background-color: rgb(79, 136, 79);
+      position: absolute;
+      padding: 2rem 1.8rem;
+      right: 3rem;
+      top: 4rem;
+      display: none;
+     
+   }
+
+   .nav-links ul li {
+      margin-bottom: 2rem;
+   }
+
+   .mobile {
+      display: flex;
+   }
+
+   #close {
+      display: none;
+   }
+
    .hero .container {
       display: flex;
       flex-direction: column;
